@@ -2,15 +2,15 @@
 
 This workspace is a synthetic-data demonstration built from `environmental_monitoring_synthetic_dataset.csv`. It has no connected live sensors. Model evaluation on synthetic data can be unrealistically optimistic and is not evidence of real-world performance or suitable for operational decisions.
 
-## Run in Replit
+## Run in vscode Replit
 
-1. Import this folder into Replit and confirm the CSV is present at the project root.
-2. Replit installs packages from `requirements.txt` (or run `pip install -r requirements.txt` in the Shell).
+1. Import this folder into Vscode and confirm the CSV is present at the project root.
+2. Vscode installs packages from `requirements.txt` (or run `pip install -r requirements.txt` in the Shell).
 3. Train the models: `python train_models.py`. This validates the CSV and writes model pipelines and `training_report.json` to `models/`.
 4. Start the application with `uvicorn main:app --host 0.0.0.0 --port 8000`, or use the configured Run button.
 5. Open the web preview. The dashboard calls the FastAPI service on the same origin. API documentation is at `/docs`.
 
-The SQLite database defaults to `data/synthetic_demo.sqlite3`. Set `DATABASE_PATH` in Replit Secrets only if you need a different server-side path. The browser never receives database credentials or secrets. Synthetic events are tagged `synthetic_demo`; future live events must be ingested into a separately authorized live-data workflow rather than labeled live by the demonstration API.
+The SQLite database defaults to `data/synthetic_demo.sqlite3`. Set `DATABASE_PATH` in Vscode Secrets only if you need a different server-side path. The browser never receives database credentials or secrets. Synthetic events are tagged `synthetic_demo`; future live events must be ingested into a separately authorized live-data workflow rather than labeled live by the demonstration API.
 
 ## API
 
