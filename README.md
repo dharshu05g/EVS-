@@ -1,7 +1,7 @@
 # Fieldwatch Environmental Monitoring Network
 
 This workspace is a synthetic-data demonstration built from `environmental_monitoring_synthetic_dataset.csv`. It has no connected live sensors. Model evaluation on synthetic data can be unrealistically optimistic and is not evidence of real-world performance or suitable for operational decisions.
-
+ 
 ## Run in vscode Replit
 
 1. Import this folder into Vscode and confirm the CSV is present at the project root.
